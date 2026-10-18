@@ -467,6 +467,40 @@ img {
     border-bottom: 1px solid var(--flannel-red);
 }
 
+.info-card-wide {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 2.5rem;
+}
+
+.wide-card-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.wide-card-content .card-icon {
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.wide-card-content h3 {
+    margin-bottom: 0.4rem;
+}
+
+.wide-card-content p {
+    margin-bottom: 0;
+}
+
+.wide-card-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
 /* ==========================================================================
    Awards Section
    ========================================================================== */
@@ -649,6 +683,18 @@ img {
     .cta-group {
         align-items: stretch;
         text-align: center;
+    }
+
+    .info-card-wide {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        padding: 2rem 1.5rem;
+    }
+
+    .wide-card-content {
+        flex-direction: column;
+        gap: 0.75rem;
     }
 
     .mobile-menu-btn {
